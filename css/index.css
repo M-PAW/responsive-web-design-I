@@ -1,3 +1,514 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* ==== wrapper ==== */
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 80%;
+    margin: 3% auto%;
+    padding: 10%;
+
+}
+
+/* ====  Header  ==== */
+header {
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content:space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+header {
+    width: 90%;
+}
+header nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: grey;
+}
+
+header div {
+    width: 30%;
+    margin-left: 2%;
+    margin-bottom:6%
+}
+
+
+/* ==== Section One ==== */
+.sect-one {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-one {
+    width: 90%;
+    padding: 8% 0;
+    border-bottom: 1px solid black;
+}
+
+.sect-one .innovation {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.sect-one .innovation {
+    width: 45%;
+    padding-right: 8%;
+    text-align: center;
+}
+
+.sect-one .innovation h1 {
+    font-size: 56px;
+}
+
+.sect-one .head-img {
+
+}
+
+.button {
+    text-align:center;
+    border: 1px solid black;
+    padding: 2.2% 12%;
+}
+
+/* ==== Seciton Two ==== */
+
+.sect-two-top {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sect-two-top {
+    padding:3.2% 0;
+    width: 90%;
+}
+
+.sect-two-top div{
+    width: 49%;
+}
+
+.sect-two img {
+    width:90%;
+}
+
+.sect-two-bottom {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sect-two-bottom {
+    padding:3.2% 0;
+    width:90%;
+    border-bottom: 1px solid black;
+}
+
+.sect-two-bottom div{
+    width: 28%;
+}
+
+footer div {
+    display:flex;
+    flex-direction: column;
+}
+
+footer div {
+    padding:3.2% 0;
+    width:90%;
+}
+
+footer p {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========   Tablet Styles ========= */
+
+@media (max-width:800px){
+
+    body {
+        padding-left: 16%;
+    }
+    .wrapper {
+        width: 80%;
+        margin: 3%;
+        margin-left:10%;
+    }
+    
+    /* ====  Header  ==== */
+    header {
+        display:flex;
+        justify-content:space-between;
+    }
+    
+    header nav {
+        display:flex;
+        justify-content: space-around;
+    }
+    
+    header nav {
+        width: 30%;
+    }
+    
+    header nav a {
+        text-decoration: none;
+        font-size: 14px;
+        color: grey;
+        margin-right: 15%;
+    }
+    
+    header {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header div {
+        width: 30%;
+        margin-left: 0;
+        margin-top: -1.6%;
+    
+    }
+    
+    /* ==== Section One ==== */
+    .sect-one {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sect-one {
+        width: 90%;
+        padding: 8% 0 8% 10%;
+        border-bottom: 1px solid black;
+    }
+    
+    .sect-one .innovation {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    
+    .sect-one .innovation {
+        width: 45%;
+        padding-right: 8%;
+        text-align: center;
+    }
+    
+    .sect-one .innovation h1 {
+        font-size: 56px;
+    }
+    
+    .sect-one .head-img {
+        display:none;
+    }
+    
+    .button {
+        text-align:center;
+        border: 1px solid black;
+        padding: 2.2% 12%;
+    }
+    
+    /* ==== Seciton Two ==== */
+    
+    .sect-two-top {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .sect-two-top {
+        padding:3.2% 0;
+        width: 90%;
+    }
+    
+    .sect-two-top div{
+        width: 49%;
+    }
+    
+    .sect-two img {
+        width:90%;
+    }
+    
+    .sect-two-bottom {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .sect-two-bottom {
+        padding:3.2% 0;
+        width:90%;
+        border-bottom: 1px solid black;
+    }
+    
+    .sect-two-bottom div{
+        width: 28%;
+    }
+    
+    footer div {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    footer div {
+        padding:3.2% 0;
+        width:90%;
+    }
+    
+    footer p {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+/* ==========  Mobile Styles  ========== */
+
+@media (max-width:500px){
+
+    /* ==== wrapper ==== */
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100%;
+    margin: 3% auto;
+}
+
+/* ====  Header  ==== */
+header {
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content:space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+header {
+    width: 100%;
+}
+header nav {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    width: 120%;
+}
+
+header nav a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 15px;
+    margin-left: 15%;
+}
+
+header div {
+    width: 30%;
+    margin-left: -6%;
+    margin-bottom:6%
+}
+
+
+/* ==== Section One ==== */
+.sect-one {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-one {
+    width: 90%;
+    padding: 8% 6% 8% 6%;
+    margin: 0 8%;
+ 
+}
+
+.sect-one .innovation {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.sect-one .innovation {
+    width: 100%;
+    padding-right: 14%;
+    
+    text-align: center;
+}
+
+.sect-one .innovation h1 {
+    font-size: 56px;
+}
+
+.sect-one .head-img {
+    display:none;
+}
+
+.button {
+    text-align:center;
+    border: 1px solid black;
+    padding: 2.2% 12%;
+}
+
+/* ==== Seciton Two ==== */
+
+.sect-two-top {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-two-top {
+    border-top: 1px solid black;
+    padding:0 5%;
+    width: 90%;
+    margin-bottom: 2%;
+}
+
+.sect-two-top div{
+    padding: 5% 0;
+    width: 100%;
+}
+
+.sect-two img {
+    width:90%;
+    margin: 0 5%;
+}
+
+.sect-two-bottom {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sect-two-bottom {
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid black;
+}
+
+.sect-two-bottom div{
+    width: 100%;
+    margin: 5% 0;
+}
+
+footer {
+    margin: 5%;
+}
+
+footer div {
+    display:flex;
+    flex-direction: column;
+}
+
+footer div {
+    padding:3.2% 0;
+    margin-bottom: 3%;
+    width:90%;
+}
+
+footer p {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
 

@@ -71,7 +71,9 @@ h1, h2, h3, h4, h5 {
 }
 .wrapper {
     width: 80%;
-    margin: 3% auto;
+    margin: 3% auto%;
+    padding: 10%;
+
 }
 
 /* ====  Header  ==== */
@@ -139,7 +141,7 @@ header div {
 }
 
 .sect-one .head-img {
-    display:none;
+
 }
 
 .button {
@@ -205,9 +207,13 @@ footer p {
 
 @media (max-width:800px){
 
+    body {
+        padding-left: 16%;
+    }
     .wrapper {
         width: 80%;
-        margin: 3% auto;
+        margin: 3%;
+        margin-left:10%;
     }
     
     /* ====  Header  ==== */
@@ -245,7 +251,6 @@ footer p {
     
     }
     
-    
     /* ==== Section One ==== */
     .sect-one {
         display:flex;
@@ -277,9 +282,7 @@ footer p {
     }
     
     .sect-one .head-img {
-        height: 60%;
-        width: 60%;
-        padding-right: 10%;
+        display:none;
     }
     
     .button {
@@ -408,9 +411,9 @@ header div {
 
 .sect-one {
     width: 90%;
-    padding: 8% 0 8% 10%;
-    margin: 0 5%;
-    border-bottom: 1px solid black;
+    padding: 8% 6% 8% 6%;
+    margin: 0 8%;
+ 
 }
 
 .sect-one .innovation {
@@ -422,8 +425,8 @@ header div {
 
 .sect-one .innovation {
     width: 100%;
-    padding-right: 8%;
-    margin-left: 3%;
+    padding-right: 14%;
+    
     text-align: center;
 }
 
@@ -432,9 +435,7 @@ header div {
 }
 
 .sect-one .head-img {
-    height: 60%;
-    width: 60%;
-    padding-right: 10%;
+    display:none;
 }
 
 .button {
@@ -453,6 +454,7 @@ header div {
 }
 
 .sect-two-top {
+    border-top: 1px solid black;
     padding:0 5%;
     width: 90%;
     margin-bottom: 2%;
